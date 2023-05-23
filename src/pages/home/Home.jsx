@@ -1,11 +1,14 @@
 import React from 'react';
-import styles from './Home.module.css';
+import Header from "../../components/header/Header.jsx";
 
 export default function Home() {
   return (
-    <div>
+    <>
+      <Header />
+      <div>
         <h1>Home page</h1>
-        <p className={styles.note}>Static page without any dynamic content just static content, styles, images, etc.</p>
-    </div>
+        <p className="note--home">Static page without any dynamic content just static content, styles, images, etc.</p>
+      </div>
+    </>
   )
 }
